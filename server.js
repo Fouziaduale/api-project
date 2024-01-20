@@ -55,10 +55,10 @@ app.get('/', (request, response)=>{
     response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:characterName', (request,response)=>{
-    const charactersName = request.params.characterName.toLowerCase()
-    if(characters[charactersName]){
-        response.json(characters[charactersName])
+app.get('/api/:name', (request,response)=>{
+    const characterName = request.params.name.toLowerCase()
+    if(characters[characterName]){
+        response.json(characters[characterName])
     }else{
         response.json(characters['unknown'])
     }
