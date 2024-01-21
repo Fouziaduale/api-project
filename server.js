@@ -6,7 +6,7 @@ const PORT = 8000
 app.use(cors())
 
 const characters = {
-    'Meowth':{
+    'meowth':{
         'characteristic': 'multifacetad mischief-maker who changed himself for love'
         
     },
